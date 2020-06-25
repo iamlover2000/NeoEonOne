@@ -2,66 +2,42 @@
 
 <style>
 
-/*
-div {
-    border: 1px solid blue;
-    border-radius: 3px;
-
-}
-*/
-
 .container {
     border: 2px solid purple;
-    
 }
 
 .nav {
-    /*
-    background-image: url("./image-navback2.jpg");
-    background-position: center;
-    background-size: cover;
-    background-color: #324890;
-    */
-    border: 2px solid red;
-    border-radius: 5px;
     height: 150px;
-    
     display: flex;
-    justify-content: space-between;
+    border-radius: 5px;
     align-items: flex-end;
-   
+    border: 2px solid red;
+    justify-content: space-between;
 }
 
 .main_icon {
-    border: 2px solid green;
-    
     display: flex;
     flex-grow: 1;
-    justify-content: center;
     align-items: flex-end;
+    border: 2px solid green;
+    justify-content: center;
 }
 
 .main_menu {
-    
-    /*display: inline-block;*/
-    /*text-align: center;*/
-    border: 1px solid black;
-    
     display: flex;
-    justify-content: space-around;
     flex-grow: 3;
+    justify-content: space-around;
+    border: 1px solid black;
 }
 
 .main_menu div {
     border:1px solid cyan;
-    
 }
 
 .user_info {
-    border: 2px solid navy;
-    
-    display: flex;
     flex-grow: 1;
+    display: flex;
+    border: 2px solid navy;
     justify-content: center;
    
 }
