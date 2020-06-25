@@ -1,0 +1,53 @@
+
+회원가입 - 아이디 비번 이메일 닉네임
+
+로그인 - 아이디or이멜 비번
+
+
+resist.html div 속성 최상위 flex? 입력값3줄로바꿀때 박스윗줄사라짐
+데이터입력 null설정문제로 입력안되던거였음
+num 으로 넘버링자동생성, date로 날짜입력 자동관련 ?
+
+<div style="align-items: center;background-color: #f1f1f1;display: flex;justify-content: center;height: 100vh;">
+    <form action="/resist_process.php" method="POST">
+        <div class="wrap">
+            <div class="">
+                <span class="title">name</span>  
+                <input type="text" name="id" value="">
+            </div>
+            <div>
+                <span class="title">pass</span>   
+                <input type="password" name="pass">
+            </div>
+            <div>
+                <span class="title">nick</span>   
+                <input type="text" name="nick">
+            </div>
+            
+            <button type="submit">가입</button>
+        </div>
+    </form>
+</div>
+
+
+
+로그인창 - 아이디/비번 로그인버튼
+로그인창정보 - 디비랑 체크 맞으면 넘기고 안맞으면 다시 
+로그인성공하면 페이지넘기고 넘기면 로그인상태를 유지해서 넘어가야됨
+
+로그인상태와 아닌거구분?
+
+
+------
+
+select 문구에서 user_name user_id 색깔 파란색? 
+login process 와 ok php 에서 include dbocnfig사용법?
+
+https://zetawiki.com/wiki/PHP_세션_로그인_구현  2.main.php username부분 
+
+---------
+
+head.php 모든페이지 상단메뉴 아이콘 및 메뉴링크들 
+main.php 각 페이지별 내용들
+
+
