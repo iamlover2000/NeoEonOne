@@ -3,7 +3,7 @@
 <style>
 
 .container {
-    border: 2px solid purple;
+    border-bottom: 2px solid purple;
 }
 
 .nav {
@@ -11,7 +11,7 @@
     display: flex;
     border-radius: 5px;
     align-items: flex-end;
-    border: 2px solid red;
+    
     justify-content: space-between;
 }
 
@@ -19,7 +19,7 @@
     display: flex;
     flex-grow: 1;
     align-items: flex-end;
-    border: 2px solid green;
+    
     justify-content: center;
 }
 
@@ -27,17 +27,17 @@
     display: flex;
     flex-grow: 3;
     justify-content: space-around;
-    border: 1px solid black;
+    
 }
 
 .main_menu div {
-    border:1px solid cyan;
+    
 }
 
 .user_info {
     flex-grow: 1;
     display: flex;
-    border: 2px solid navy;
+    
     justify-content: center;
    
 }
