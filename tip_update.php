@@ -27,15 +27,17 @@ if($res['author_id'] !== $auth_user['id']){
 	<div class="main_contents">
         <div>
             <form action="tip_update_insert.php?id=<?=$_GET['id']?>" method="POST">
-                <input type="text" name="title" required="true" value="<?=$res['title']?>">
+                <input type="text" class="form-control mb-3" name="title" required="true" value="<?=$res['title']?>">
                 <textarea name="text" id="editor1" rows="10" cols="80" required="true"><?=$res['text']?></textarea>
                 <script>
                     // Replace the <textarea id="editor1"> with a CKEditor 4
                     // instance, using default configuration.
                     CKEDITOR.replace( 'editor1' );
                 </script>
-                <button type="submit">수정</button>
-                <button type="button" onclick="history.back();">취소</button>
+                <div class="mt-3 text-right">
+                    <button type="submit" class="btn btn-danger">수정</button>
+                    <button type="button" onclick="history.back();" class="btn btn-danger">취소</button>
+                </div>
             </form>
         </div>
 		

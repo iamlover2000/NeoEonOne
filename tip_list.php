@@ -41,18 +41,18 @@ $list = $pdo->query('
 				if($page_nav_array['pre'] == 0){?>
 					<li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>	
 				<?}else{?>
-					<li ><a href="tip_list.php?page=<?=$page_nav_array['pre']?>" aria-label="Previous"><span aria-hidden="true">«</span></a></li>	
+					<li ><a href="tip_list.php?page=<?=$page_nav_array['pre']?>&bid=<?=$bid?>" aria-label="Previous"><span aria-hidden="true">«</span></a></li>	
 				<?}?>
 				
 				<?foreach ($page_nav_array['nav'] as $key => $value) {?>
 					<li <?= ($value == $page) ? 'class=active':'' ?>>
-						<a href="tip_list.php?page=<?=$value?>"><?=$value?></a>
+						<a href="tip_list.php?page=<?=$value?>&bid=<?=$bid?>"><?=$value?></a>
 					</li>
 				<?}
 				if($page_nav_array['next'] == 0){?>
 					<li class="disabled"><a href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>	
 				<?}else{?>
-					<li><a href="tip_list.php?page=<?=$page_nav_array['next']?>" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+					<li><a href="tip_list.php?page=<?=$page_nav_array['next']?>&bid=<?=$bid?>" aria-label="Next"><span aria-hidden="true">»</span></a></li>
 				<?}?>
 			</ul>
 		</nav>
@@ -97,18 +97,18 @@ $list = $pdo->query('
 				if($page_nav_array['pre'] == 0){?>
 					<li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>	
 				<?}else{?>
-					<li ><a href="tip_list.php?page=<?=$page_nav_array['pre']?>" aria-label="Previous"><span aria-hidden="true">«</span></a></li>	
+					<li ><a href="tip_list.php?page=<?=$page_nav_array['pre']?>&bid=<?=$bid?>" aria-label="Previous"><span aria-hidden="true">«</span></a></li>	
 				<?}?>
 				
 				<?foreach ($page_nav_array['nav'] as $key => $value) {?>
 					<li <?= ($value == $page) ? 'class=active':'' ?>>
-						<a href="tip_list.php?page=<?=$value?>"><?=$value?></a>
+						<a href="tip_list.php?page=<?=$value?>&bid=<?=$bid?>"><?=$value?></a>
 					</li>
 				<?}
 				if($page_nav_array['next'] == 0){?>
 					<li class="disabled"><a href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>	
 				<?}else{?>
-					<li><a href="tip_list.php?page=<?=$page_nav_array['next']?>" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+					<li><a href="tip_list.php?page=<?=$page_nav_array['next']?>&bid=<?=$bid?>" aria-label="Next"><span aria-hidden="true">»</span></a></li>
 				<?}?>
 			</ul>
 		</nav>
