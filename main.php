@@ -1,13 +1,12 @@
 <?php include "./head.php"; ?>
 <div class="contents">
-	<div class="title">
-		<h2>코딩과제</h2>
-	</div>
-	<div class="sub"></div>
-	<div class="main_contents">
-		<p>과제분류</p>
-	</div>
+    <div class="title">
+        <h1>NeoEonOne's hideout </h1>
+    </div>
+    <div class="sub"></div>
+    <div class="main_contents">
+        <p>Game, Coding, Tips for any kind ...</p>
+    </div>
 </div>
-	
 
 <?php include "./tail.php"; ?>

@@ -1,6 +1,5 @@
-
 <?php
-    $login_page = true;
+    $guest_page = true;
 	include "./header.php";
 ?>
     <style>
