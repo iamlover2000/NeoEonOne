@@ -1,18 +1,59 @@
 <?php include "./header.php"; ?>
 
+<style>
+
+.container {
+    border: 2px solid purple;
+}
+
+.nav {
+    height: 150px;
+    display: flex;
+    border-radius: 5px;
+    align-items: flex-end;
+    border: 2px solid red;
+    justify-content: space-between;
+}
+
+.main_icon {
+    display: flex;
+    flex-grow: 1;
+    align-items: flex-end;
+    border: 2px solid green;
+    justify-content: center;
+}
+
+.main_menu {
+    display: flex;
+    flex-grow: 3;
+    justify-content: space-around;
+    border: 1px solid black;
+}
+
+.main_menu div {
+    border:1px solid cyan;
+}
+
+.user_info {
+    flex-grow: 1;
+    display: flex;
+    border: 2px solid navy;
+    justify-content: center;
+   
+}
+
+</style>
+
 <div class="container">
     <div class="nav">
-        <div class="main_icon">
-            
-            <a href="index.php">
-                <img src="https://img.icons8.com/wired/64/000000/chrome.png"/>
-                <span>NeoEonOne</span> 
-            </a>
-        </div>
+        <div class="main_icon"><img src="https://img.icons8.com/wired/64/000000/chrome.png"/>NeoEonOne</div>
         <div class="main_menu">
-            <div><a href="./tip_list.php">팁게시판</a></div>
-            <div><a href="./tip_list.php?bid=2">거래게시판</a></div>
-            <div><a href="./tip_list.php?bid=3">직업게시판</a></div>
+            <div>
+                <span>메뉴1</span>
+                <span>메뉴1</span>
+            </div>
+            <div>메뉴2</div>
+            <div>메뉴3</div>
             <div>메뉴4</div>
         </div>
         <div class="user_info">
@@ -20,8 +61,8 @@
                 <span class="user_name"><?=$auth_user['user_id']?>님</span>
                 <a href='logout.php'>로그아웃</a>
             <?}else{?>
-                <a href="login.php">로그인</a>
-                <a href="resist.php">회원가입</a>
+                <a href="">로그인</a>
             <?}?>
         </div>
     </div>
+</div>
