@@ -1,6 +1,7 @@
 <?php include "./header.php"; ?>
 
 <div class="container">
+    <div class="fixed">
     <div class="nav">
         <div class="main_icon">
             
@@ -13,15 +14,20 @@
             <div><a href="./tip_list.php">팁게시판</a></div>
             <div><a href="./tip_list.php?bid=2">거래게시판</a></div>
             <div><a href="./tip_list.php?bid=3">직업게시판</a></div>
-            <div>메뉴4</div>
+            <div><a href="./tip_list.php?bid=4">빈게시판</a></div>
         </div>
         <div class="user_info">
             <? if ($auth_user) {?>
                 <span class="user_name"><?=$auth_user['user_id']?>님</span>
                 <a href='logout.php'>로그아웃</a>
             <?}else{?>
+                <div class="btn">
                 <a href="login.php">로그인</a>
+                </div>
+                <div class="btn">
                 <a href="resist.php">회원가입</a>
+                </div>
             <?}?>
         </div>
+    </div>
     </div>

@@ -8,6 +8,10 @@ $stmt->bindParam(':id',$_GET['id']);
 $stmt->execute();
 $res = $stmt->fetch();
 
+$search = isset($_GET['search']) ? $_GET['search'] : false;
+$kind = isset($_GET['kind']) ? $_GET['kind'] : 'title';
+
+
 ?>
 <div class="contents">
 	<div class="title">
@@ -45,7 +49,7 @@ $res = $stmt->fetch();
                 <tr>
                     <td colspan="4">
                         <div class="text-right">
-                            <a class="btn btn-default" href="./tip_list.php">목록으로</a>
+                            <a class="btn btn-default" href="./tip_list.php?bid=<?=$bid?>&kind=<?=$kind?>&search=<?=$search?>">목록으로</a>
                        
                             <?if($_SESSION['userid'] == $res['user_id']){?>    
                             <a href="./tip_update.php?id=<?=$_GET['id']?>" class="btn btn-primary" >내용수정</a>

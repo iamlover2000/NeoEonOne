@@ -13,15 +13,15 @@
         <!-- <form action="login_ok.php" method="POST"> -->
             <div>
                 <div>
-                    <span class="title">id</span>
-                    <input type="text" name="id">
+                    
+                    <input type="text" class=" form-control mb-3" name="id" placeholder="ID">
                 </div>
                 <div>
-                    <span class="title">pass</span>
-                    <input type="password" name="pass">
+                    
+                    <input type="password" class=" form-control mb-3" name="pass" placeholder="PW">
                 </div>
                 <div>
-                    <input type="submit" value="로그인">
+                    <input type="submit" class="btn btn-primary" value="로그인">
                 </div>
             </div>
         </form>

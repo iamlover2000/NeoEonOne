@@ -23,7 +23,7 @@ include "./board_config.php";
                         <i class="fa fa-floppy-o" aria-hidden="true"></i> 작성
                     </button>
                     <button type="button" class="btn btn-danger" onclick="history.back();">
-                    <i class="fa fa-times" aria-hidden="true"></i> 취소
+                        <i class="fa fa-times" aria-hidden="true"></i> 취소
                     </button>
                 </div>
             </form>

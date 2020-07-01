@@ -1,3 +1,8 @@
+<?php
+    $guest_page = true;
+	include "./head.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,22 +30,22 @@
     <form action="/resist_process.php" method="POST">
         <div class="wrap">
             <div class="">
-                <span class="title">name</span>  
-                <input type="text" name="id" value="">
+                
+                <input type="text" class=" form-control mb-3" name="id" placeholder="아이디">
             </div>
             <div>
-                <span class="title">pass</span>   
-                <input type="password" name="pass">
+                
+                <input type="password" class=" form-control mb-3" name="pass" placeholder="비밀번호">
             </div>
             <div>
-                <span class="title">nick</span>   
-                <input type="text" name="nick">
+                
+                <input type="text" class=" form-control mb-3" name="nick" placeholder="닉네임">
             </div>
             <div>
-                <span class="title">mail</span>   
-                <input type="email" name="mail" >
+                
+                <input type="email" class=" form-control mb-3" name="mail"  placeholder="메일주소">
             </div>
-            <button type="submit">가입</button>
+            <button type="submit" class="btn btn-primary">가입</button>
         </div>
         <div>
             <a href="index.php">메인으로</a>

@@ -17,7 +17,7 @@ try {
     $res = $stmt->execute();
        
     echo "<script>alert('글이 작성되었습니다.');
-        location.replace('./tip_list.php')
+        location.replace('./tip_list.php?bid=$bid')
     </script> ";
     // throw new Exception("test error", 64654645);
     
