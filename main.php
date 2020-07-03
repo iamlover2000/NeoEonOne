@@ -6,6 +6,7 @@
     <div class="sub"></div>
     <div class="main_contents">
         <p>Game, Coding, Tips for any kind ...</p>
+        
     </div>
 </div>
 

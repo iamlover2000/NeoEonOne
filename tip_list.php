@@ -8,7 +8,7 @@ $page_count = 20;
 $search = isset($_GET['search']) ? $_GET['search'] : false;
 $kind = isset($_GET['kind']) ? $_GET['kind'] : 'title';
 
-
+// dump($search);
 
 $search_query = '';
 if($search){
@@ -123,11 +123,11 @@ $list = $pdo->query('
 				<form class="disFlex" action="tip_list.php" method="get">
 					<input type="hidden" name="bid" value="<?=$bid?>">
 					<select class="form-control searchWidth" name="kind">
-						<option value="title">제목</option>
-						<option value="nick">글쓴이</option>
-						<option value="text">내용</option>
+						<option value="title"  <?= ($kind == 'title') ? 'selected':'' ?>>제목</option>
+						<option value="nick" <?= ($kind == 'nick') ? 'selected':'' ?>>글쓴이</option>
+						<option value="text" <?= ($kind == 'text') ? 'selected':'' ?>>내용</option>
 					</select>
-					<input class="form-control" type="text" size="45" name="search" value="">
+					<input class="form-control" type="text" size="45" name="search" value="<?=$search?>">
 					<button class="btn btn-default" type="submit">찾기</button>
 
 				</form>
