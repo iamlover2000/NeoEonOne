@@ -59,6 +59,8 @@ body {
 
 .user_info {
     display: flex;
+    text-align: center;
+    align-items: center;
 }
 
 .user_name {
@@ -129,4 +131,12 @@ body {
 .disFlex {
     display: flex;
     max-width: 400px;
+}
+
+.creditBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    flex-direction: column;
 }

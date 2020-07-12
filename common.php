@@ -11,7 +11,7 @@ $Common = new Common;
 
 
 $auth_user = false;
-// dump('auth_user',$auth_user);
+
 
 if (isset($_SESSION['userid'])) {
 
@@ -20,8 +20,8 @@ if (isset($_SESSION['userid'])) {
     $stmt->execute();
     $auth_user = $stmt->fetch();
 }
-
-//login check
+// dump('auth_user',$auth_user);
+// login check
 if(!$auth_user && !$guest_page) {
     echo '로그인 해주세요';
     header('Location: ./login.php');
