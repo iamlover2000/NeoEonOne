@@ -1,21 +1,38 @@
+/* * {
+    border: 1px solid royalblue;
+} */
+
 body {
-    background-color: #f5f5f5;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    /* background-color: #000000; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* min-height: 100vh; */
+    background: #000000 url(./images/harvest-bg.jpg) no-repeat top center;
+    background-size: contain;
 }
 
 .container {
-    max-width: 100%;
-    flex: 1;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 100;
+    min-width: 1012px;
+    /* width: 1170px; */
 }
 
 .nav {
-    display: flex;
+    /* display: flex; */
     border-radius: 2px;
-    align-items: center;
-    padding: 10px 20px;
+    /* align-items: center; */
+    /* padding: 10px 20px; */
     border-bottom: 1px solid #dedddd;
+    position: relative;
+    /* text-align: left; */
+    /* z-index: 102; */
+    margin: 0 auto;
+    width: 980px;
+    height: 217px;
+    vertical-align: baseline;
 }
 
 .nav a {
@@ -28,7 +45,7 @@ body {
 }
 
 .main_icon a {
-    display: flex;
+    /* display: flex; */
     flex-grow: 1;
     align-items: center;
     justify-content: center;
@@ -39,14 +56,18 @@ body {
 }
 
 .main_menu {
-    display: flex;
+    /* display: flex; */
     flex-grow: 3;
     justify-content: space-around;
+    color: aquamarine;
 }
 
 .main_menu div {
-    flex: 1;
+    /* width: 120px;
+    height: 50px;
+    flex: 1; */
     text-align: center;
+    display: inline-block;
 }
 
 .main_menu div+div {
@@ -60,11 +81,15 @@ body {
 .user_info {
     display: flex;
     text-align: center;
-    align-items: center;
+    align-items: flex-end;
+    color: antiquewhite;
+    position: absolute;
+    right: 20px;
 }
 
 .user_name {
     margin-right: 5px;
+    color: antiquewhite;
 }
 
 .contents {
@@ -117,11 +142,101 @@ body {
 }
 
 .fixed {
-    background-color: #f5f5f5;
-    position: -webkit-sticky;
-    position: sticky;
+    /* background-color: #000000; */
+    /* position: -webkit-sticky; */
+    position: relative;
+    z-index: 102;
+    text-align: left;
+    background: transparent url(./images/header_no_logo.png) no-repeat;
+    background-position-x: center;
+    background-position-y: 90px;
+    vertical-align: baseline;
+    margin: 0 auto;
+}
+
+.ul_menu {
+    list-style: none;
+    font-weight: bold;
+    width: 978px;
+    font-size: 16.5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ul_menu li {
+    float: left;
+    position: relative;
+    background: none;
+    padding: 0px;
+    cursor: default;
+}
+
+.ul_menu>li>a {
+    display: block;
+    background: url(./images/nav-button-sprite-ko_KR.png);
+    /* width: 110px; */
+    height: 50px;
+    overflow: hidden;
+    text-indent: -9999em;
+}
+
+#mainLogoLink {
+    /* position: absolute;
+    left: 0;
+    right: 0;
     top: 0;
-    z-index: 5;
+    bottom: 50px;
+    width: 222px;
+    display: block;
+    z-index: 9999;
+    margin-left: auto;
+    margin-right: auto;
+    background: transparent url(images/harvestheaderlogo.png) no-repeat center 0; */
+    content: "";
+    height: 110%;
+    width: 120%;
+    margin: 0 -10%;
+    display: block;
+    background: transparent url(images/harvestheaderlogo.png) no-repeat center 0;
+    pointer-events: none;
+}
+
+#menu_first a {
+    background-position: 0px -250px;
+    margin-left: 82px;
+    width: 111px;
+}
+
+#menu_second a {
+    background-position: 0px -100px;
+    width: 119px;
+}
+
+#menu_third a {
+    background-position: -120px 0px;
+    width: 119px;
+}
+
+#menu_fourth a {
+    background-position: 0px 0px;
+    margin-left: 116px;
+    width: 120px;
+}
+
+#menu_fifth a {
+    background-position: -239px 0px;
+    width: 119px;
+}
+
+#menu_sixth a {
+    background-position: -239px -100px;
+    width: 112px;
 }
 
 .searchWidth {
@@ -139,4 +254,33 @@ body {
     justify-content: center;
     height: 70vh;
     flex-direction: column;
+}
+
+.dropDown {
+    opacity: 0;
+    visibility: hidden;
+    display: block;
+}
+
+.ul_menu li:hover>#sub_menu_first {
+    opacity: 1;
+    visibility: visible;
+}
+
+.ul_menu li:hover>#sub_menu_second {
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropDown ul {
+    width: 189px;
+    padding: 10 0;
+    position: relative;
+}
+
+.dropDown ul>li {
+    padding-top: 1px;
+    float: none;
+    position: relative;
+    background: none;
 }
